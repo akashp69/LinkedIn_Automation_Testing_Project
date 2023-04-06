@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browserName" value="chrome"></parameter>
+    <test verbose="2" preserve-order="true" name="C:/Users/HP/IdeaProjects/CQALinkedInPOM">
+        <classes>
+            <class name="com.bridgelabz.selenium.test.LinkedInTest">
+                <methods>
+                    <parameter name="userName" value="akashpakhare9999@gmail.com"></parameter>
+                    <parameter name="password" value="Akash#69"></parameter>
+                    <include name="validatesUrlNavigation"/>
+                    <include name="loginToLinkedIn"/>
+                    <include name="homeDashboardValidation_Success"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
